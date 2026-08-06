@@ -3,7 +3,14 @@ import torch.nn as nn
 
 
 class PositionalEncoder(nn.Module):
-
+    '''
+        Input : 
+            model_din : int -> dimentions of the vector e.g 512
+            seq_len : int -> total number of embedding vectors in the sequence
+        Output : 
+            an embedding vector of 512 dimentions + with postional information
+    '''
+    
     def __init__(self,model_dim,seq_len,dropout_p): 
 
         super().__init__()

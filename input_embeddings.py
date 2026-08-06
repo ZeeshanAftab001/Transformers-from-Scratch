@@ -4,10 +4,11 @@ import torch.nn as nn
 
 class InputEmbeddings(nn.Module):
     '''
-    Input : 
-        model_din : int -> dimentions of the vector e.g 512
-        vocal_size : int -> total number of unique words in the data
-
+        Input : 
+            model_din : int -> dimentions of the vector e.g 512
+            vocal_size : int -> total number of unique words in the data
+        Output : 
+            an embedding vector of 512 dimentions
     '''
     def __init__(self,model_dim,vocab_size): 
 
