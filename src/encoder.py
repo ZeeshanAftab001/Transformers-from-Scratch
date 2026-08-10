@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from residual_connection import ResidualConnection
-from layer_norm import LayerNormalization
+from src.residual_connection import ResidualConnection
+from src.layer_norm import LayerNormalization
 
 class EncoderBlock(nn.Module):
 
