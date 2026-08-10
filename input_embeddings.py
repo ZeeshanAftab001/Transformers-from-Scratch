@@ -20,3 +20,5 @@ class InputEmbeddings(nn.Module):
     def forward(self,X):
 
         return self.embeddings(X) * torch.sqrt(self.model_dim) # something done in the paper 
+
+
