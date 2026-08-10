@@ -1,7 +1,7 @@
 import torch 
 import torch.nn as nn
 
-class LayerNorm(nn.Module):
+class LayerNormalization(nn.Module):
     '''
         Input : 
             model_din : int -> dimentions of the vector e.g 512
